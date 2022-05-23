@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int bin[4], num;
+    int i = 0;
+    
+    while(i < 4) {
+        printf("Digite o %do. bit: ", i+1);
+        scanf("%d", &bin[i]);
+        i++;
+    }
+    
+    num = ((2*2*2) * bin[0]) + ((2*2) * bin[1]) + (2 * bin[2]) + bin[3];
+    
+    printf("O numero binario %d%d%d%d corresponde ao numero decimal %d", bin[0], bin[1], bin[2], bin[3], num);
+    
+    return 0;
+}
