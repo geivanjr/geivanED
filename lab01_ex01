@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float jogadores[3], premio, total;
+    int i = 0;
+    printf("<<Loteria>>\n");
+    while(i < 3) {
+        printf("Bolão Jogador %d: ", i+1);
+        scanf("%f", &jogadores[i]);
+        i++;
+    }
+    printf("Informe o valor do premio: ");
+    scanf("%f", &premio);
+    printf("\n");
+    
+    total = jogadores[0] + jogadores[1] + jogadores[2];
+    
+    for(i = 0; i < 3; i++)
+        printf("jogador %d recebera: %.1f\n", i+1, premio*(jogadores[i]/total));
+    
+    return 0;
+}
