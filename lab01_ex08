@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int i;        //dp = desvio padrão
+    double x[5], media = 0, dp = 0;
+    printf("<<Media e desvio padrão>>\n\n");
+    
+    for(i = 0; i < 5; i++) {
+        printf("Digite o valor %d: ", i+1);
+        scanf("%lf", &x[i]);
+        media = media + x[i];
+    }
+    media = media/5;
+    for(i = 0; i < 5; i++)
+        dp = dp + (x[i] - media)*(x[i] - media);
+    
+    dp = sqrt(dp * 0.25);
+    
+    printf("%.2f\n", media);
+    printf("%f", dp);
+    return 0;
+}
