@@ -1,0 +1,32 @@
+// exercicio (a)
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a = 40;
+    int *p = &a;
+    
+    printf("Usando o endereco: %d\n", &a);
+    printf("Usando o ponteiro: %d\n", p);
+
+    return 0;
+}
+
+// exercicio (b)
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a = 40;
+    int *p = &a;
+    
+    printf("Antes da mudanca: %d\n", a);
+    
+    *p = 60;
+    
+    printf("Depois da mudanca: %d\n", a);
+
+    return 0;
+}
