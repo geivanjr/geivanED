@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    double x[10] = {12, 34, 56, 43, 78, 90, 56, 12345, 3842, 768};
+    
+    printf("Os valores são: ");
+    
+    for(i = 0; i < 10; i++) {
+        printf("%.2f, ", x[i]);
+    }
+    
+    return 0;
+}
