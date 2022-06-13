@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    char c[20] = "jose augusto";
+    
+    printf("O nome eh: ");
+    for(i = 0; i < 12; i++) {
+        printf("%c", c[i]);
+    }
+
+    return 0;
+}
