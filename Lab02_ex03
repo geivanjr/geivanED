@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    double x[10] = {12, 32, -23, 63, 10, 85, 16, 756, -43656735, 90};
+    
+    printf("Imprimindo os doubles por ponteiro\n\n");
+    
+    for(i = 0; i < 10; i++) {
+        printf("%.2f, ", x[i]);
+    }
+
+    return 0;
+}
